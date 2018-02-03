@@ -301,6 +301,7 @@
 
                     <!-- Index Module -->
 <div class="material-index mdl-grid">
+    <!-- 从 `_config.yml` 读取 `scheme`字段 -->
     
         <!-- Paradox Header -->
         <!-- Daily pic -->
@@ -591,11 +592,16 @@
 
                     
                         <!-- Overlay For Active Sidebar -->
+<style type="text/css">
+    .father {position: relative;}
+    .child {position: absolute; bottom: 0;}
+</style>
+
 <div class="sidebar-overlay"></div>
 
 <!-- Material sidebar -->
 <aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
-    <div id="sidebar-main">
+    <div id="sidebar-main" class="father">
         <!-- Sidebar Header -->
         <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar.jpg);">
     <!-- Top bar -->
@@ -749,30 +755,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 -->
 
-    </div>
-
-    <!-- Sidebar Image -->
-    
-
-</aside>
-
-                    
-
-                    
-                        <!-- Footer Top Button -->
-                        <div id="back-to-top" class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
-
-                    
-
-                    <!--Footer-->
-<footer class="mdl-mini-footer" id="bottom">
-    
-        <!-- Paradox Footer Left Section -->
-        <div class="mdl-mini-footer--left-section sns-list">
+        <div class="child">
+            <!-- Paradox Footer Left Section -->
+            <div class="mdl-mini-footer--left-section sns-list" style="text-align:center">
     <!-- Twitter -->
     
         <a href="https://twitter.com/kiukotsu" target="_blank">
@@ -847,11 +832,33 @@ It will not impact the appearance and can give developers a lot of support :)
 
     <!-- Telegram -->
     
-    
+
     <!-- V2EX -->
     
 </div>
+        </div>
+    </div>
 
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
 
         <!--Copyright-->
         <div id="copyright">
